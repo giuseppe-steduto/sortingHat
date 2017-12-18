@@ -1,0 +1,128 @@
+﻿<html>
+  <head>
+    <title>
+      Il cappello parlante
+    </title>
+    <script src = "./domande.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel = "stylesheet" type = "text/css" href = "domande.css">
+  </head>
+  <body>
+    <div id = "riqSfondo"></div>
+    <img src = "hw.jpg" class = "immagineS" style = "animation: enfatizza 10s infinite">
+    <p id = "intro">Rispondi con sincerità</p>
+    <section class = "domanda visibile" id = "dom1">
+      <p>Quanto ti piace studiare?</p>
+      <form method = "get">
+        <label for = "n1">Poco</label>
+        <input type = "radio"  value = "ele" name = "scelta1" id = "n1">
+        <span class = "radioB"></span><br>
+        <label for = "n2">Te lo dico dopo, devo studiare</label>
+        <input type = "radio"  value = "bio" name = "scelta1" id = "n2">
+        <span class = "radioB"></span><br>
+        <label for = "n3">Mi scoccia un po'</label>
+        <input type = "radio"  value = "ite" name = "scelta1" id = "n3">
+        <span class = "radioB"></span><br>
+        <label for = "n4">Abbastanza</label>
+        <input type = "radio"  value = "inf" name = "scelta1" id = "n4">
+        <span class = "radioB"></span><br>
+      </form>
+      <button onclick="calcola(this.value); avanti();" value = "scelta1" class = "avanti">Avanti →</button>
+    </section>
+    <section class = "domanda nascosto" id = "dom2">
+      <p>Quanto sei stupido?2</p>
+      <form method = "get">
+        <label for = "n5">Scelta1</label>
+        <input type = "radio"  value = "bio" name = "scelta2" id = "n5">
+        <span class = "radioB"></span><br>
+        <label for = "n6">Scelta2</label>
+        <input type = "radio"  value = "inf" name = "scelta2" id = "n6">
+        <span class = "radioB"></span><br>
+        <label for = "n7">Scelta3</label>
+        <input type = "radio"  value = "ele" name = "scelta2" id = "n7">
+        <span class = "radioB"></span><br>
+        <label for = "n8">Scelta4</label>
+        <input type = "radio"  value = "ite" name = "scelta2" id = "n8">
+        <span class = "radioB"></span><br>
+      </form>
+      <button onclick="indietro();" value = "scelta2" class = "indietro">← Indietro </button>
+      <button onclick="calcola(this.value); avanti();" value = "scelta2" class = "avanti">Avanti →</button>
+    </section>
+    <section class = "domanda nascosto" id = "dom3">
+      <p>Quanto sei stupido?3</p>
+      <form method = "get">
+        <label for = "n9">CELLULE!</label>
+        <input type = "radio"  value = "bio" name = "scelta3" id = "n9">
+        <span class = "radioB"></span><br>
+        <label for = "n10">No.</label>
+        <input type = "radio"  value = "inf" name = "scelta3" id = "n10">
+        <span class = "radioB"></span><br>
+        <label for = "n11">UH?!</label>
+        <input type = "radio"  value = "ele" name = "scelta3" id = "n11">
+        <span class = "radioB"></span><br>
+        <label for = "n12">Non ho tempo di pensarci</label>
+        <input type = "radio"  value = "ite" name = "scelta3" id = "n12">
+        <span class = "radioB"></span><br>
+      </form>
+      <button onclick="indietro();" value = "scelta3" class = "indietro">← Indietro </button>
+      <button onclick="calcola(this.value); avanti();" value = "scelta3" class = "avanti">Avanti →</button>
+    </section>
+    <section class = "domanda nascosto" id = "dom4">
+      <p>Quanto sei è stupido4</p>
+      <form method = "get">
+        <label for = "n13">Scelta1</label>
+        <input type = "radio"  value = "bio" name = "scelta4" id = "n13">
+        <span class = "radioB"></span><br>
+        <label for = "n14">Scelta2</label>
+        <input type = "radio"  value = "inf" name = "scelta4" id = "n14">
+        <span class = "radioB"></span><br>
+        <label for = "n15">Scelta3</label>
+        <input type = "radio"  value = "ele" name = "scelta4" id = "n15">
+        <span class = "radioB"></span><br>
+        <label for = "n16">Scelta4</label>
+        <input type = "radio"  value = "ite" name = "scelta4" id = "n16">
+        <span class = "radioB"></span><br>
+      </form>
+      <button onclick="indietro();" value = "scelta4" class = "indietro">← Indietro </button>
+      <button onclick="calcola(this.value); avanti();" value = "scelta4" class = "avanti">Avanti →</button>
+    </section>
+    <section class = "domanda nascosto" id = "dom5">
+      <p>Quanto sei stupido?5</p>
+        <form method = "get">
+          <label for = "n17">Scelta1</label>
+          <input type = "radio"  value = "bio" name = "scelta5" id = "n17">
+          <span class = "radioB"></span><br>
+          <label for = "n18">Scelta2</label>
+          <input type = "radio"  value = "inf" name = "scelta5" id = "n18">
+          <span class = "radioB"></span><br>
+          <label for = "n19">Scelta3</label>
+          <input type = "radio"  value = "ele" name = "scelta5" id = "n19">
+          <span class = "radioB"></span><br>
+          <label for = "n20">Scelta4</label>
+          <input type = "radio"  value = "ite" name = "scelta5" id = "n20">
+          <span class = "radioB"></span><br>
+        </form>
+      <button onclick="indietro();" value = "scelta5" class = "indietro">← Indietro </button>
+      <button onclick="calcola(this.value); reindirizza();" value = "scelta5" class = "vai">SMISTAMI!</button>
+    </section>
+
+    <section class = "domanda nascosto" id = "dom6">
+      <p>Personalità complicata! Cosa preferiresti?</p>
+      <form method = "get">
+        <label for = "nb1">Scelta1</label>
+        <input type = "radio"  value = "bio" name = "bonus" id = "nb1">
+        <span class = "radioB"></span><br>
+        <label for = "nb2">Scelta2</label>
+        <input type = "radio"  value = "inf" name = "bonus" id = "nb2">
+        <span class = "radioB"></span><br>
+        <label for = "nb3">Scelta3</label>
+        <input type = "radio"  value = "ele" name = "bonus" id = "nb3">
+        <span class = "radioB"></span><br>
+        <label for = "nb4">Scelta4</label>
+        <input type = "radio"  value = "ite" name = "bonus" id = "nb4">
+        <span class = "radioB"></span><br>
+      </form>
+      <button onclick="reindirizzaBonus();" value = "bonus" class = "vai">SMISTAMI!</button>
+    </section>
+  </body>
+</html>

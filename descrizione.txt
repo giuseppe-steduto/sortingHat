@@ -1,0 +1,12 @@
+cappelloParlante
+{
+  -HOME
+  -DOMANDE
+  -PAG. SMISTAMENTO
+  {
+    -
+    -
+    -
+    -
+  }
+}
